@@ -148,7 +148,10 @@ export default function TaskCard({
                 <OuterIcons>
                     <hr />
                     <Icons>
-                        <PhoneIcon fontSize='large' />
+                        <PhoneIcon
+                            fontSize='inherit
+                            '
+                        />
                         <EmailIcon fontSize='large' />
                         <LocationOnIcon fontSize='large' />
                     </Icons>

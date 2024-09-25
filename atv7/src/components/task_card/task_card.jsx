@@ -58,6 +58,7 @@ const TasksDiv = styled.div`
 
   & h3 {
     border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 `;
 
