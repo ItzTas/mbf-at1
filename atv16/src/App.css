@@ -1,0 +1,24 @@
+.app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.app ul {
+    display: flex;
+    gap: 10px;
+}
+
+.app header {
+    display: flex;
+    align-items: center;
+}
+
+.app header img {
+    width: 100px;
+    border-radius: 8px;
+}
