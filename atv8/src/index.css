@@ -17,4 +17,6 @@ img {
 
 body {
     font-size: 62.5%;
+    font-family: 'JetBrains Mono', system-ui;
+    padding: 4px;
 }
