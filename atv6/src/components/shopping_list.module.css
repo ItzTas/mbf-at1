@@ -21,11 +21,6 @@
     margin-bottom: 10px;
     background-color: var(--bg-color);
     transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.item:hover {
-    background-color: var(--hover-color);
 }
 
 .itemName {
@@ -50,5 +45,15 @@
 
     .item {
         padding: 15px;
+    }
+}
+
+@media (pointer: fine) {
+    .item:hover {
+        background-color: var(--hover-color);
+    }
+
+    .item {
+        cursor: pointer;
     }
 }
