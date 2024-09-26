@@ -1,0 +1,38 @@
+.innerMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.menu {
+    width: 100vw;
+    position: fixed;
+    font-size: clamp(1.4rem, 1.34vw, 1.7rem);
+}
+
+.menuIcon {
+    cursor: pointer;
+}
+
+.options {
+    font-weight: bold;
+    text-align: center;
+}
+
+.options li {
+    border-bottom: 1px solid;
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .options {
+        display: flex;
+        gap: clamp(20px, 3vw, 30px);
+    }
+
+    .options li {
+        border: none;
+    }
+}
