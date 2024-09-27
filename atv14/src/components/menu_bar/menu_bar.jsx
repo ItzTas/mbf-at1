@@ -1,6 +1,6 @@
-import styles from './sidebar.module.css';
+import styles from './menu_bar.module.css';
 
-export default function Sidebar() {
+export default function MenuBar() {
     const topics = {
         recent: [
             'Tópico Recente 1',
@@ -60,5 +60,3 @@ export default function Sidebar() {
         </aside>
     );
 }
-
-

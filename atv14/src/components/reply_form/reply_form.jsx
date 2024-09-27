@@ -2,16 +2,20 @@ import { useState } from 'react';
 import styles from './reply_form.module.css';
 import PropTypes from 'prop-types';
 
-export default function ReplyForm({ user }) {
+export default function ReplyForm({ user, onClickButton }) {
     const [content, setContent] = useState('');
 
-    function handleSubmit(e) {
+    function handleClickButton(e) {
         e.preventDefault();
+        if (!content.trim()) {
+            return;
+        }
+        onClickButton(content, user.name);
         setContent('');
     }
 
     return (
-        <form className={styles.replyForm} onSubmit={handleSubmit}>
+        <form className={styles.replyForm}>
             <textarea
                 className={styles.textarea}
                 value={content}
@@ -21,7 +25,13 @@ export default function ReplyForm({ user }) {
             />
             <div className={styles.footer}>
                 <span className={styles.userInfo}>Logado como: {user.name}</span>
-                <button type='submit' className={styles.submitButton}>
+                <button
+                    type='submit'
+                    className={styles.submitButton}
+                    onClick={(e) => {
+                        handleClickButton(e);
+                    }}
+                >
                     Enviar
                 </button>
             </div>
@@ -33,4 +43,5 @@ ReplyForm.propTypes = {
     user: PropTypes.shape({
         name: PropTypes.string.isRequired,
     }).isRequired,
+    onClickButton: PropTypes.func.isRequired,
 };

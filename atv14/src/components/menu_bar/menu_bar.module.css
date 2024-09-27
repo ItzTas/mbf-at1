@@ -1,0 +1,29 @@
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    margin-top: 2rem;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.item {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item:hover {
+    color: #61dafb;
+}
