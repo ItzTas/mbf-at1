@@ -1,0 +1,43 @@
+.topicDetails {
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author, .date, .stats {
+  font-size: 1.4rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.likes, .replies {
+  color: #61dafb;
+}
+

@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navItem {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #61dafb;
+}
+
