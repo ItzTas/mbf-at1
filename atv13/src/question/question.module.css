@@ -1,0 +1,23 @@
+.question {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    margin-bottom: 0.5rem;
+    padding: 10px;
+}
+
+.justification {
+    margin-top: 1rem;
+    font-style: italic;
+}

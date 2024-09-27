@@ -1,0 +1,29 @@
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.score {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+@media (min-width: 1150px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
